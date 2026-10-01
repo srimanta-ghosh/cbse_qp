@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Class XII CS Pre-Board 1</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="hdr">
+  <h1>GURU TEGH BAHADUR PUBLIC SCHOOL, DURGAPUR</h1>
+  <h2>SESSION : 2026-27</h2>
+  <h3>PRE-BOARD EXAMINATION – I</h3>
+</div>
+<div class="meta"><span>CLASS &nbsp;&nbsp;&nbsp;&nbsp;: XII</span><span>MAXIMUM MARKS : 50</span></div>
+<div class="meta"><span>SUBJECT : COMPUTER SCIENCE (083)</span><span>TIME ALLOWED : 1 Hr. 45 Min.</span></div>
+<hr>
+<b>General Instructions:</b>
+<ol style="margin-top:4px">
+  <li>The paper is divided into 5 Sections - A, B, C, D and E.</li>
+  <li>All questions are compulsory.</li>
+  <li>All programming questions are to be answered using Python Language only.</li>
+  <li>Write all the sub-parts of a question together sequentially.</li>
+</ol>
+
+<div class="sec">SECTION - A</div>
+<div class="q"><span class="no">Q.1</span><span class="tx">Answer the following:</span><span class="mk">(1 X 13 = 13)</span></div>
+<div class="sub">(a) Name the network device that connects two dissimilar networks working on different protocols.</div>
+<div class="sub">(b) Which protocol is used to transfer files from one computer to another over the Internet?</div>
+<div class="sub">(c) Name the network topology in which all the nodes are connected to a central hub or switch.</div>
+<div class="sub">(d) Which guided transmission medium carries data in the form of light signals and is immune to electromagnetic interference?</div>
+<div class="sub">(e) The bandwidth of a communication channel is measured in _____________.</div>
+<div class="sub">(f) Name the Python module that must be imported to use the <code>dump()</code> and <code>load()</code> functions on a binary file.</div>
+<div class="sub">(g) Which method of a csv writer object is used to write several rows into a CSV file at once?</div>
+<div class="sub">(h) What is the default mode in which a file is opened by <code>open()</code> when no mode is specified?</div>
+<div class="sub">(i) Write a statement to place the file pointer of the file object <code>F</code> at the 20<sup>th</sup> byte from the beginning of the file.</div>
+<div class="sub">(j) What will be the output of the following code?</div>
+<pre>  def f(a, b=2):
+      return a ** b
+  print(f(3), f(2, 3))</pre>
+<div class="sub">(k) A user-defined function that does not have a <code>return</code> statement returns _____________ by default.</div>
+<div class="blk"><div class="sub">(l) <b>Assertion (A):</b> A variable created inside a function cannot be accessed outside that function.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Reason (R):</b> The scope of a local variable is limited to the function in which it is defined.</div>
+<div class="sub2">i. Both A and R are True and R is the correct explanation for A.<br>
+ii. Both A and R are True and R is not the correct explanation for A.<br>
+iii. A is True but R is False.&nbsp;&nbsp;&nbsp;&nbsp; iv. A is False but R is True.</div></div>
+<div class="blk"><div class="sub">(m) <b>Assertion (A):</b> Opening an existing text file in 'a' mode does not delete its previous contents.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Reason (R):</b> In 'a' mode the file pointer is placed at the end of the file.</div>
+<div class="sub2">i. Both A and R are True and R is the correct explanation for A.<br>
+ii. Both A and R are True and R is not the correct explanation for A.<br>
+iii. A is True but R is False.&nbsp;&nbsp;&nbsp;&nbsp; iv. A is False but R is True.</div></div>
+
+<div class="sec">SECTION - B</div>
+<div class="q"><span class="no">Q.2</span><span class="tx">Write the full form of the following:</span><span class="mk">(2)</span></div>
+<div class="sub">(a) SMTP &nbsp;&nbsp;&nbsp;&nbsp; (b) URL &nbsp;&nbsp;&nbsp;&nbsp; (c) XML &nbsp;&nbsp;&nbsp;&nbsp; (d) TCP/IP</div>
+
+<div class="blk">
+<div class="q"><span class="no">Q.3</span><span class="tx">What will be the output of the following Python code?</span><span class="mk">(2)</span></div>
+<pre>def modify(L, x):
+    L.append(x)
+    x = x * 2
+    L[0] = L[0] + x
+    return x
+
+nums = [5, 10]
+val = 3
+r = modify(nums, val)
+print(nums, val, r)</pre>
+</div>
+
+<div class="q"><span class="no">Q.4</span><span class="tx">Differentiate between the <code>write()</code> and <code>writelines()</code> methods of a file object. Give one example of each.</span><span class="mk">(2)</span></div>
+
+<div class="sec">SECTION - C</div>
+<div class="q"><span class="no">Q.5</span><span class="tx">Differentiate between the following (one point each):</span><span class="mk">(3)</span></div>
+<div class="sub">(a) Hub and Switch</div>
+<div class="sub">(b) Web Browser and Web Server</div>
+<div class="sub">(c) HTML and XML</div>
+
+<div class="blk">
+<div class="q"><span class="no">Q.6</span><span class="tx">A text file <b>"POEM.TXT"</b> contains the following lines:</span><span class="mk">(3)</span></div>
+<pre>Twinkle twinkle little star
+How I wonder what you are
+Up above the world so high
+Like a diamond in the sky</pre>
+<div class="sub">Write the output of each of the following code segments:</div>
+<pre>(a) f = open("POEM.TXT", "r")
+    print(f.read(7))
+    f.close()
+
+(b) f = open("POEM.TXT", "r")
+    L = f.readlines()
+    print(len(L), L[2].split()[0])
+    f.close()
+
+(c) f = open("POEM.TXT", "r")
+    f.seek(8)
+    print(f.read(7))
+    print(f.tell())
+    f.close()</pre>
+</div>
+
+<div class="q"><span class="no">Q.7</span><span class="tx">Write a Python function <b>FREQ(L)</b> that accepts a list <code>L</code> of integers as argument and returns a dictionary in which each distinct element of the list is a key and its number of occurrences is the value.<br>
+For example, if <code>L = [4, 2, 4, 7, 2, 4]</code>, the function should return <code>{4: 3, 2: 2, 7: 1}</code>.<br>
+Also write a statement to call the function and display the returned dictionary.</span><span class="mk">(3)</span></div>
+
+<div class="sec">SECTION - D</div>
+<div class="q"><span class="no">Q.8</span><span class="tx">A binary file <b>"STUDENT.DAT"</b> stores records of students, where each record is a list in the form <code>[AdmNo, Name, Percent]</code>. Write the following user-defined functions:</span><span class="mk">(4)</span></div>
+<div class="sub">(a) <b>addrec()</b> – to accept the details of a student from the user and append the record to the file "STUDENT.DAT".</div>
+<div class="sub">(b) <b>countrec()</b> – to read the file "STUDENT.DAT", display the details of those students whose Percent is above 75, and return the number of such students.</div>
+
+<div class="q"><span class="no">Q.9</span><span class="tx">Answer the following questions:</span><span class="mk">(4)</span></div>
+<div class="sub">(a) What was ARPANET? Name the network that evolved from it in the mid-1980s for academic research.</div>
+<div class="sub">(b) Write one difference between Circuit Switching and Packet Switching.</div>
+<div class="sub">(c) Why is microwave transmission called line-of-sight transmission?</div>
+<div class="sub">(d) What is an IP address? Give one example.</div>
+
+<div class="blk">
+<div class="q"><span class="no">Q.10</span><span class="tx">Write the output of the following code segments:</span><span class="mk">(2+2)</span></div>
+<pre>(a) p = 5
+    def calc(q):
+        global p
+        p = p + q
+        q = q + p
+        return q
+    r = calc(p)
+    print(p, r)
+    r = calc(r)
+    print(p, r)
+
+(b) def show(name, marks=40, grade='C'):
+        if marks >= 80:
+            grade = 'A'
+        print(name, marks, grade, sep='-')
+    show('Riya', 85)
+    show('Amit', grade='B')
+    show(marks=90, name='Joy', grade='B')
+    show('Sam', 60, 'B')</pre>
+</div>
+
+<div class="sec">SECTION - E</div>
+<div class="blk">
+<div class="q"><span class="no">Q.11</span><span class="tx">Ananya is maintaining the records of a school library in a CSV file named <b>"LIBRARY.CSV"</b>. Each record has the fields <code>[BookID, Title, Author, Qty]</code>. Help her by answering the following:</span><span class="mk">(5)</span></div>
+<div class="sub">(a) Name the module and the function used to create a writer object for a CSV file. <span style="float:right"><b>(1)</b></span></div>
+<div class="sub">(b) Write a function <b>AddBook()</b> that accepts the details of a book from the user and appends it as a record to "LIBRARY.CSV". <span style="float:right"><b>(2)</b></span></div>
+<div class="sub">(c) Write a function <b>ShowLowStock()</b> that reads "LIBRARY.CSV" and displays the details of all books whose Qty is less than 5, along with the total number of such books. <span style="float:right"><b>(2)</b></span></div>
+</div>
+
+<div class="blk">
+<div class="q"><span class="no">Q.12</span><span class="tx"><b>Global Tech Solutions</b> is setting up a new campus in Durgapur with four blocks – ADMIN, TECH, HR and ACCOUNTS. Its head office is in Delhi. The distances between the blocks and the number of computers in each block are given below:</span><span class="mk">(5)</span></div>
+<div style="display:flex; gap:10px;">
+<table>
+  <tr><th>Blocks</th><th>Distance</th></tr>
+  <tr><td>ADMIN to TECH</td><td>60 m</td></tr>
+  <tr><td>ADMIN to HR</td><td>120 m</td></tr>
+  <tr><td>ADMIN to ACCOUNTS</td><td>90 m</td></tr>
+  <tr><td>TECH to HR</td><td>50 m</td></tr>
+  <tr><td>TECH to ACCOUNTS</td><td>110 m</td></tr>
+  <tr><td>HR to ACCOUNTS</td><td>70 m</td></tr>
+</table>
+<table style="align-self:flex-start">
+  <tr><th>Block</th><th>No. of Computers</th></tr>
+  <tr><td>ADMIN</td><td>25</td></tr>
+  <tr><td>TECH</td><td>120</td></tr>
+  <tr><td>HR</td><td>30</td></tr>
+  <tr><td>ACCOUNTS</td><td>20</td></tr>
+</table>
+</div>
+<div class="sub">(a) Suggest the most suitable block to house the server of this organisation. Justify your answer.</div>
+<div class="sub">(b) Draw a cable layout to efficiently connect the various blocks within the Durgapur campus.</div>
+<div class="sub">(c) Suggest the placement of a Repeater in the layout drawn by you, with justification.</div>
+<div class="sub">(d) Which type of network (PAN / LAN / MAN / WAN) will be formed when the Durgapur campus is connected to the Delhi head office?</div>
+<div class="sub">(e) The company wants to make voice calls over the Internet between Durgapur and Delhi. Name the protocol/technology that can be used for this purpose.</div>
+</div>
+
+<div class="end">************************* End of Question Paper *************************</div>
+</body></html>
