@@ -12,3 +12,6 @@ table { border-collapse:collapse; margin:6px 0 6px 50px; font-size:11pt; } td, t
 .blk { page-break-inside: avoid; }
 .end { text-align:center; margin-top:18px; }
 .ans { margin:2px 0 6px 44px; } .ans pre { margin-left:10px; }
+.opt { display:grid; grid-template-columns: 1fr 1fr; margin:2px 0 4px 70px; row-gap:1px; }
+.opt code, pre { font-family: "Courier New", monospace; }
+.sec { page-break-after: avoid; break-after: avoid; }

@@ -14,39 +14,65 @@
   <li>The paper is divided into 5 Sections - A, B, C, D and E.</li>
   <li>All questions are compulsory.</li>
   <li>All programming questions are to be answered using Python Language only.</li>
+  <li>In case of MCQs, text of the correct answer should also be written.</li>
   <li>Write all the sub-parts of a question together sequentially.</li>
 </ol>
 
 <div class="sec">SECTION - A</div>
 <div class="q"><span class="no">Q.1</span><span class="tx">Answer the following:</span><span class="mk">(1 X 13 = 13)</span></div>
-<div class="sub">(a) Name the network device that connects two dissimilar networks working on different protocols.</div>
-<div class="sub">(b) Which protocol is used to transfer files from one computer to another over the Internet?</div>
-<div class="sub">(c) Name the network topology in which all the nodes are connected to a central hub or switch.</div>
-<div class="sub">(d) Which guided transmission medium carries data in the form of light signals and is immune to electromagnetic interference?</div>
-<div class="sub">(e) The bandwidth of a communication channel is measured in _____________.</div>
-<div class="sub">(f) Name the Python module that must be imported to use the <code>dump()</code> and <code>load()</code> functions on a binary file.</div>
-<div class="sub">(g) Which method of a csv writer object is used to write several rows into a CSV file at once?</div>
-<div class="sub">(h) What is the default mode in which a file is opened by <code>open()</code> when no mode is specified?</div>
-<div class="sub">(i) Write a statement to place the file pointer of the file object <code>F</code> at the 20<sup>th</sup> byte from the beginning of the file.</div>
-<div class="sub">(j) What will be the output of the following code?</div>
-<pre>  def f(a, b=2):
-      return a ** b
-  print(f(3), f(2, 3))</pre>
-<div class="sub">(k) A user-defined function that does not have a <code>return</code> statement returns _____________ by default.</div>
-<div class="blk"><div class="sub">(l) <b>Assertion (A):</b> A variable created inside a function cannot be accessed outside that function.<br>
+
+<div class="sub">(a) State True or False:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"A user-defined function in Python can return more than one value at a time."</div>
+
+<div class="blk">
+<div class="sub">(b) What will be the output of the following code?</div>
+<pre>  def Update(A):
+      A = A * 2
+      print(A, end='#')
+  A = 7
+  Update(A)
+  print(A)</pre>
+<div class="opt"><span>(A) <code>14#7</code></span><span>(B) <code>7#14</code></span><span>(C) <code>14#14</code></span><span>(D) <code>7#7</code></span></div>
+</div>
+
+<div class="blk"><div class="sub">(c) Which of the following is a valid function header?</div>
+<div class="opt"><span>(A) <code>def calc(a=5, b):</code></span><span>(B) <code>def calc(a, b=5):</code></span><span>(C) <code>def calc(a=5, b, c=2):</code></span><span>(D) <code>def calc(a, b=5, c):</code></span></div></div>
+
+<div class="blk"><div class="sub">(d) Which Python module must be imported to use the <code>dump()</code> and <code>load()</code> methods on a binary file?</div>
+<div class="opt"><span>(A) csv</span><span>(B) pickle</span><span>(C) os</span><span>(D) binary</span></div></div>
+
+<div class="blk"><div class="sub">(e) Which file mode opens an existing binary file for both reading and writing <u>without</u> erasing its contents?</div>
+<div class="opt"><span>(A) <code>'wb+'</code></span><span>(B) <code>'rb+'</code></span><span>(C) <code>'ab'</code></span><span>(D) <code>'w+'</code></span></div></div>
+
+<div class="sub">(f) State True or False:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"An absolute path of a file always starts from the root directory (or drive) of the system."</div>
+
+<div class="sub">(g) Write a statement to place the file pointer of the file object <code>F</code> at the 20<sup>th</sup> byte from the beginning of the file.</div>
+
+<div class="blk"><div class="sub">(h) Which of the following is <u>not</u> a guided (wired) transmission medium?</div>
+<div class="opt"><span>(A) Twisted pair cable</span><span>(B) Co-axial cable</span><span>(C) Microwave</span><span>(D) Fibre-optic cable</span></div></div>
+
+<div class="blk"><div class="sub">(i) _____________ protocol allows a user to log in to a remote computer and use its resources.</div>
+<div class="opt"><span>(A) PPP</span><span>(B) TELNET</span><span>(C) SMTP</span><span>(D) HTTP</span></div></div>
+
+<div class="blk"><div class="sub">(j) In which network topology does the failure of the single backbone cable bring down the entire network?</div>
+<div class="opt"><span>(A) Star</span><span>(B) Bus</span><span>(C) Tree</span><span>(D) None of these</span></div></div>
+
+<div class="blk"><div class="sub">(k) Data transfer rate of a communication medium is measured in:</div>
+<div class="opt"><span>(A) Hertz (Hz)</span><span>(B) bits per second (bps)</span><span>(C) metres</span><span>(D) decibels</span></div></div>
+
+<div class="blk">
+<div class="sub"><i>Q1 (l) and (m) are Assertion (A) and Reason (R) based questions. Mark the correct choice as:</i><br>
+(A) Both A and R are True and R is the correct explanation for A.<br>
+(B) Both A and R are True and R is not the correct explanation for A.<br>
+(C) A is True but R is False.<br>
+(D) A is False but R is True.</div>
+<div class="sub">(l) <b>Assertion (A):</b> A variable created inside a function cannot be accessed outside that function.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Reason (R):</b> The scope of a local variable is limited to the function in which it is defined.</div>
-<div class="sub2">i. Both A and R are True and R is the correct explanation for A.<br>
-ii. Both A and R are True and R is not the correct explanation for A.<br>
-iii. A is True but R is False.&nbsp;&nbsp;&nbsp;&nbsp; iv. A is False but R is True.</div></div>
-<div class="blk"><div class="sub">(m) <b>Assertion (A):</b> Opening an existing text file in 'a' mode does not delete its previous contents.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Reason (R):</b> In 'a' mode the file pointer is placed at the end of the file.</div>
-<div class="sub2">i. Both A and R are True and R is the correct explanation for A.<br>
-ii. Both A and R are True and R is not the correct explanation for A.<br>
-iii. A is True but R is False.&nbsp;&nbsp;&nbsp;&nbsp; iv. A is False but R is True.</div></div>
+<div class="sub">(m) <b>Assertion (A):</b> HTTPS is considered safer than HTTP for online banking.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Reason (R):</b> HTTPS encrypts the data exchanged between the web browser and the web server.</div>
+</div>
 
 <div class="sec">SECTION - B</div>
-<div class="q"><span class="no">Q.2</span><span class="tx">Write the full form of the following:</span><span class="mk">(2)</span></div>
-<div class="sub">(a) SMTP &nbsp;&nbsp;&nbsp;&nbsp; (b) URL &nbsp;&nbsp;&nbsp;&nbsp; (c) XML &nbsp;&nbsp;&nbsp;&nbsp; (d) TCP/IP</div>
+<div class="q"><span class="no">Q.2</span><span class="tx">(a) Differentiate between a Hub and a Switch.<br>(b) Expand the following: PPP, POP3</span><span class="mk">(1+1)</span></div>
 
 <div class="blk">
 <div class="q"><span class="no">Q.3</span><span class="tx">What will be the output of the following Python code?</span><span class="mk">(2)</span></div>
@@ -65,10 +91,9 @@ print(nums, val, r)</pre>
 <div class="q"><span class="no">Q.4</span><span class="tx">Differentiate between the <code>write()</code> and <code>writelines()</code> methods of a file object. Give one example of each.</span><span class="mk">(2)</span></div>
 
 <div class="sec">SECTION - C</div>
-<div class="q"><span class="no">Q.5</span><span class="tx">Differentiate between the following (one point each):</span><span class="mk">(3)</span></div>
-<div class="sub">(a) Hub and Switch</div>
-<div class="sub">(b) Web Browser and Web Server</div>
-<div class="sub">(c) HTML and XML</div>
+<div class="q"><span class="no">Q.5</span><span class="tx">Write a function <b>COUNT_CHARS()</b> in Python that reads the text file <b>"DATA.TXT"</b> and displays the number of uppercase letters, lowercase letters and digits present in the file.<br>
+For example, if the file contains: &nbsp;<code>CBSE Exam 2027 is on 15th March.</code><br>
+the output should be: &nbsp;<code>Uppercase: 6 &nbsp; Lowercase: 13 &nbsp; Digits: 6</code></span><span class="mk">(3)</span></div>
 
 <div class="blk">
 <div class="q"><span class="no">Q.6</span><span class="tx">A text file <b>"POEM.TXT"</b> contains the following lines:</span><span class="mk">(3)</span></div>
@@ -98,15 +123,15 @@ For example, if <code>L = [4, 2, 4, 7, 2, 4]</code>, the function should return 
 Also write a statement to call the function and display the returned dictionary.</span><span class="mk">(3)</span></div>
 
 <div class="sec">SECTION - D</div>
-<div class="q"><span class="no">Q.8</span><span class="tx">A binary file <b>"STUDENT.DAT"</b> stores records of students, where each record is a list in the form <code>[AdmNo, Name, Percent]</code>. Write the following user-defined functions:</span><span class="mk">(4)</span></div>
-<div class="sub">(a) <b>addrec()</b> – to accept the details of a student from the user and append the record to the file "STUDENT.DAT".</div>
-<div class="sub">(b) <b>countrec()</b> – to read the file "STUDENT.DAT", display the details of those students whose Percent is above 75, and return the number of such students.</div>
+<div class="q"><span class="no">Q.8</span><span class="tx">Ananya is maintaining the records of a school library in a CSV file named <b>"LIBRARY.CSV"</b>. Each record has the fields <code>[BookID, Title, Author, Qty]</code>. Help her by writing the following user-defined functions:</span><span class="mk">(4)</span></div>
+<div class="sub">(a) <b>AddBook()</b> – to accept the details of a book from the user and append it as a record to "LIBRARY.CSV".</div>
+<div class="sub">(b) <b>ShowLowStock()</b> – to read "LIBRARY.CSV" and display the details of all books whose Qty is less than 5, along with the total number of such books.</div>
 
 <div class="q"><span class="no">Q.9</span><span class="tx">Answer the following questions:</span><span class="mk">(4)</span></div>
 <div class="sub">(a) What was ARPANET? Name the network that evolved from it in the mid-1980s for academic research.</div>
 <div class="sub">(b) Write one difference between Circuit Switching and Packet Switching.</div>
 <div class="sub">(c) Why is microwave transmission called line-of-sight transmission?</div>
-<div class="sub">(d) What is an IP address? Give one example.</div>
+<div class="sub">(d) What is a domain name? Identify the domain name in the URL: <code>https://www.cbse.gov.in/web/index.html</code></div>
 
 <div class="blk">
 <div class="q"><span class="no">Q.10</span><span class="tx">Write the output of the following code segments:</span><span class="mk">(2+2)</span></div>
@@ -133,14 +158,14 @@ Also write a statement to call the function and display the returned dictionary.
 
 <div class="sec">SECTION - E</div>
 <div class="blk">
-<div class="q"><span class="no">Q.11</span><span class="tx">Ananya is maintaining the records of a school library in a CSV file named <b>"LIBRARY.CSV"</b>. Each record has the fields <code>[BookID, Title, Author, Qty]</code>. Help her by answering the following:</span><span class="mk">(5)</span></div>
-<div class="sub">(a) Name the module and the function used to create a writer object for a CSV file. <span style="float:right"><b>(1)</b></span></div>
-<div class="sub">(b) Write a function <b>AddBook()</b> that accepts the details of a book from the user and appends it as a record to "LIBRARY.CSV". <span style="float:right"><b>(2)</b></span></div>
-<div class="sub">(c) Write a function <b>ShowLowStock()</b> that reads "LIBRARY.CSV" and displays the details of all books whose Qty is less than 5, along with the total number of such books. <span style="float:right"><b>(2)</b></span></div>
+<div class="q"><span class="no">Q.11</span><span class="tx">A binary file <b>"STUDENT.DAT"</b> stores records of students, where each record is a list in the form <code>[AdmNo, Name, Percent]</code>.</span><span class="mk">(1+2+2)</span></div>
+<div class="sub">(a) Differentiate between the <code>'wb'</code> and <code>'ab'</code> file modes.</div>
+<div class="sub">(b) Write a function <b>addrec()</b> to accept the details of a student from the user and append the record to the file "STUDENT.DAT".</div>
+<div class="sub">(c) Write a function <b>update_percent(adm)</b> that accepts an admission number as argument and increases the Percent of that student by 5 in the file "STUDENT.DAT". If no such student exists, display "Record not found".</div>
 </div>
 
 <div class="blk">
-<div class="q"><span class="no">Q.12</span><span class="tx"><b>Global Tech Solutions</b> is setting up a new campus in Durgapur with four blocks – ADMIN, TECH, HR and ACCOUNTS. Its head office is in Delhi. The distances between the blocks and the number of computers in each block are given below:</span><span class="mk">(5)</span></div>
+<div class="q"><span class="no">Q.12</span><span class="tx"><b>Global Tech Solutions</b> is setting up a new campus in Durgapur with four blocks – ADMIN, TECH, HR and ACCOUNTS. Its head office is in Delhi. As a network expert, you have to suggest the best network solutions based on the following details:</span><span class="mk">(5)</span></div>
 <div style="display:flex; gap:10px;">
 <table>
   <tr><th>Blocks</th><th>Distance</th></tr>
@@ -160,8 +185,8 @@ Also write a statement to call the function and display the returned dictionary.
 </table>
 </div>
 <div class="sub">(a) Suggest the most suitable block to house the server of this organisation. Justify your answer.</div>
-<div class="sub">(b) Draw a cable layout to efficiently connect the various blocks within the Durgapur campus.</div>
-<div class="sub">(c) Suggest the placement of a Repeater in the layout drawn by you, with justification.</div>
+<div class="sub">(b) Suggest and draw a cable layout to efficiently connect the blocks within the Durgapur campus.</div>
+<div class="sub">(c) Suggest the placement of the following devices: &nbsp;(i) Repeater &nbsp;&nbsp;(ii) Switch</div>
 <div class="sub">(d) Which type of network (PAN / LAN / MAN / WAN) will be formed when the Durgapur campus is connected to the Delhi head office?</div>
 <div class="sub">(e) The company wants to make voice calls over the Internet between Durgapur and Delhi. Name the protocol/technology that can be used for this purpose.</div>
 </div>
