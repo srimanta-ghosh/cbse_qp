@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Class XII CS Pre-Board 1 Marking Scheme</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="hdr">
+  <h1>GURU TEGH BAHADUR PUBLIC SCHOOL, DURGAPUR</h1>
+  <h2>SESSION : 2026-27</h2>
+  <h3>PRE-BOARD EXAMINATION – I &nbsp;|&nbsp; MARKING SCHEME</h3>
+</div>
+<div class="meta"><span>CLASS : XII</span><span>MAXIMUM MARKS : 50</span></div>
+<div class="meta"><span>SUBJECT : COMPUTER SCIENCE (083)</span><span>TIME ALLOWED : 1 Hr. 45 Min.</span></div>
+<hr>
+
+<div class="sec">SECTION - A (1 × 13 = 13)</div>
+<div class="ans">
+(a) True &nbsp;&nbsp; (b) (A) <code>14#7</code> &nbsp;&nbsp; (c) (B) <code>def calc(a, b=5):</code> &nbsp;&nbsp; (d) (B) pickle &nbsp;&nbsp; (e) (B) <code>'rb+'</code><br>
+(f) True &nbsp;&nbsp; (g) <code>F.seek(20)</code> &nbsp;&nbsp; (h) (C) Microwave &nbsp;&nbsp; (i) (B) TELNET &nbsp;&nbsp; (j) (B) Bus<br>
+(k) (B) bits per second (bps) &nbsp;&nbsp; (l) (A) Both A and R are True and R is the correct explanation for A.<br>
+(m) (A) Both A and R are True and R is the correct explanation for A.</div>
+
+<div class="sec">SECTION - B</div>
+<div class="q"><span class="no">Q.2</span><span class="tx">(a) A hub broadcasts incoming data to all connected devices. A switch sends data only to the intended device, using its MAC address. (1)<br>
+(b) PPP – Point-to-Point Protocol; POP3 – Post Office Protocol version 3. (½ + ½)</span><span class="mk">(2)</span></div>
+<div class="q"><span class="no">Q.3</span><span class="tx"><code>[11, 10, 3] 3 6</code><br>(1 mark for the list, ½ each for 3 and 6. The list is changed in place because it is mutable; <code>val</code> is unchanged because the integer is immutable.)</span><span class="mk">(2)</span></div>
+<div class="q"><span class="no">Q.4</span><span class="tx"><code>write()</code> writes a single string to the file, e.g. <code>f.write("Hello\n")</code>.<br>
+<code>writelines()</code> writes all the strings in a list or other iterable, e.g. <code>f.writelines(["A\n", "B\n"])</code>.<br>(1 mark for the difference, ½ mark for each example)</span><span class="mk">(2)</span></div>
+
+<div class="sec">SECTION - C</div>
+<div class="q"><span class="no">Q.5</span><span class="tx"><pre>def COUNT_CHARS():
+    f = open("DATA.TXT", "r")
+    data = f.read()
+    u = l = d = 0
+    for ch in data:
+        if ch.isupper():
+            u += 1
+        elif ch.islower():
+            l += 1
+        elif ch.isdigit():
+            d += 1
+    print("Uppercase:", u, "Lowercase:", l, "Digits:", d)
+    f.close()</pre>(Open and read 1, loop and conditions 1½, display ½)</span><span class="mk">(3)</span></div>
+<div class="q"><span class="no">Q.6</span><span class="tx">(a) <code>Twinkle</code> &nbsp; (1)<br>(b) <code>4 Up</code> &nbsp; (1)<br>(c) <code>twinkle</code> then <code>15</code> on the next line &nbsp; (½ + ½)</span><span class="mk">(3)</span></div>
+<div class="q"><span class="no">Q.7</span><span class="tx"><pre>def FREQ(L):
+    D = {}
+    for i in L:
+        if i in D:
+            D[i] += 1
+        else:
+            D[i] = 1
+    return D
+
+print(FREQ([4, 2, 4, 7, 2, 4]))</pre>(Function header ½, loop 1, dictionary update 1, return and call ½. Accept <code>D[i] = D.get(i, 0) + 1</code> or any other correct logic.)</span><span class="mk">(3)</span></div>
+
+<div class="sec">SECTION - D</div>
+<div class="q"><span class="no">Q.8</span><span class="tx"><pre>import csv
+def AddBook():
+    f = open("LIBRARY.CSV", "a", newline='')
+    w = csv.writer(f)
+    bid = input("Book ID: ")
+    title = input("Title: ")
+    author = input("Author: ")
+    qty = int(input("Qty: "))
+    w.writerow([bid, title, author, qty])
+    f.close()
+
+def ShowLowStock():
+    count = 0
+    f = open("LIBRARY.CSV", "r")
+    r = csv.reader(f)
+    for rec in r:
+        if int(rec[3]) < 5:
+            print(rec)
+            count += 1
+    f.close()
+    print("Total books with low stock:", count)</pre>(a) 2 marks &nbsp; (b) 2 marks. Also accept a header row skipped with <code>next(r)</code>.</span><span class="mk">(4)</span></div>
+<div class="q"><span class="no">Q.9</span><span class="tx">(a) ARPANET (Advanced Research Projects Agency Network) was the first packet-switched network, started in 1969 by the US Department of Defense. NSFNET evolved from it. (1)<br>
+(b) Circuit switching sets up a dedicated physical path before transmission, which stays reserved for the whole session. Packet switching has no dedicated path: data is split into packets that may travel by different routes. (1)<br>
+(c) Microwaves travel in straight lines and cannot bend around obstacles, so the sending and receiving antennas must be aligned and in direct sight of each other. (1)<br>
+(d) A domain name is a human-readable name that identifies a website and maps to its IP address. Domain name here: <code>www.cbse.gov.in</code> (also accept <code>cbse.gov.in</code>). (½ + ½)</span><span class="mk">(4)</span></div>
+<div class="q"><span class="no">Q.10</span><span class="tx">(a) <pre>10 15
+25 40</pre>(1 mark per line)<br>
+(b) <pre>Riya-85-A
+Amit-40-B
+Joy-90-A
+Sam-60-B</pre>(½ mark per line)</span><span class="mk">(4)</span></div>
+
+<div class="sec">SECTION - E</div>
+<div class="q"><span class="no">Q.11</span><span class="tx">(a) <code>'wb'</code> creates a new file, or erases the existing contents, before writing. <code>'ab'</code> keeps the existing contents and adds new data at the end. (1)
+<pre>import pickle
+def addrec():                                   # (b) 2 marks
+    f = open("STUDENT.DAT", "ab")
+    adm = int(input("Admission No: "))
+    name = input("Name: ")
+    per = float(input("Percent: "))
+    pickle.dump([adm, name, per], f)
+    f.close()
+
+def update_percent(adm):                        # (c) 2 marks
+    records = []
+    found = False
+    f = open("STUDENT.DAT", "rb")
+    try:
+        while True:
+            rec = pickle.load(f)
+            if rec[0] == adm:
+                rec[2] += 5
+                found = True
+            records.append(rec)
+    except EOFError:
+        f.close()
+    if found:
+        f = open("STUDENT.DAT", "wb")
+        for rec in records:
+            pickle.dump(rec, f)
+        f.close()
+    else:
+        print("Record not found")</pre>
+(c) Also accept an in-place update using <code>'rb+'</code> with <code>tell()</code>/<code>seek()</code>, or writing to a temporary file and renaming it.</span><span class="mk">(5)</span></div>
+<div class="q"><span class="no">Q.12</span><span class="tx">(a) TECH block. It has the most computers (120), so placing the server there keeps most traffic local (80–20 rule). (1)<br>
+(b) Star layout centred on TECH: TECH–ADMIN (60 m), TECH–HR (50 m), TECH–ACCOUNTS (110 m).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Also accept the minimum-cable layout TECH–HR (50 m), TECH–ADMIN (60 m), HR–ACCOUNTS (70 m). (1)<br>
+(c) (i) Repeater: in the star layout, between TECH and ACCOUNTS, because that distance (110 m) is more than 100 m. In the minimum-cable layout no segment is over 100 m, so no repeater is needed. Give credit for either answer if it matches the student's own layout.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(ii) Switch: in every block, to connect the computers within that block. (½ + ½)<br>
+(d) WAN (Wide Area Network). (1)<br>
+(e) VoIP (Voice over Internet Protocol). (1)</span><span class="mk">(5)</span></div>
+
+<div class="end">************************* End of Marking Scheme *************************</div>
+</body></html>

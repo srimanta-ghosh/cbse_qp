@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Class XII IP Pre-Board 1</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="hdr">
+  <h1>GURU TEGH BAHADUR PUBLIC SCHOOL, DURGAPUR</h1>
+  <h2>SESSION : 2026-27</h2>
+  <h3>PRE-BOARD EXAMINATION – I</h3>
+</div>
+<div class="meta"><span>CLASS &nbsp;&nbsp;&nbsp;&nbsp;: XII</span><span>MAXIMUM MARKS : 50</span></div>
+<div class="meta"><span>SUBJECT : INFORMATICS PRACTICES (065)</span><span>TIME ALLOWED : 1 Hr. 45 Min.</span></div>
+<hr>
+<b>General Instructions:</b>
+<ol style="margin-top:4px">
+  <li>The paper is divided into 5 Sections - A, B, C, D and E.</li>
+  <li>All questions are compulsory.</li>
+  <li>All programming questions are to be answered using Python Language only. Assume that the pandas library has been imported as <code>pd</code> wherever required.</li>
+  <li>In case of MCQs, text of the correct answer should also be written.</li>
+  <li>Write all the sub-parts of a question together sequentially.</li>
+</ol>
+
+<div class="sec">SECTION - A</div>
+<div class="q"><span class="no">Q.1</span><span class="tx">Answer the following:</span><span class="mk">(1 X 13 = 13)</span></div>
+
+<div class="sub">(a) State True or False:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"The index labels of a Pandas Series must always be integers."</div>
+
+<div class="blk">
+<div class="sub">(b) What will be the output of the following code?</div>
+<pre>  s = pd.Series([10, 20, 30, 40, 50])
+  print(s[1:4].sum())</pre>
+<div class="opt"><span>(A) 60</span><span>(B) 90</span><span>(C) 100</span><span>(D) 120</span></div>
+</div>
+
+<div class="blk"><div class="sub">(c) Which attribute of a Series returns the total number of elements in it, including NaN values?</div>
+<div class="opt"><span>(A) <code>count</code></span><span>(B) <code>len</code></span><span>(C) <code>size</code></span><span>(D) <code>index</code></span></div></div>
+
+<div class="blk"><div class="sub">(d) Which of the following functions is used to read data from a CSV file into a DataFrame?</div>
+<div class="opt"><span>(A) <code>pd.read_csv()</code></span><span>(B) <code>pd.to_csv()</code></span><span>(C) <code>pd.load_csv()</code></span><span>(D) <code>pd.open_csv()</code></span></div></div>
+
+<div class="blk"><div class="sub">(e) Which parameter of <code>to_csv()</code> is used so that the row labels of a DataFrame are <u>not</u> written to the CSV file?</div>
+<div class="opt"><span>(A) <code>header=False</code></span><span>(B) <code>index=False</code></span><span>(C) <code>sep=None</code></span><span>(D) <code>labels=False</code></span></div></div>
+
+<div class="sub">(f) In a DataFrame, <code>axis=1</code> refers to the _____________ of the DataFrame.</div>
+
+<div class="blk"><div class="sub">(g) Riya wants to transfer pictures from her mobile phone to her laptop. She uses Bluetooth Technology to connect two devices. Which type of network will be formed in this case?</div>
+<div class="opt"><span>(A) PAN</span><span>(B) LAN</span><span>(C) MAN</span><span>(D) WAN</span></div></div>
+
+<div class="blk"><div class="sub">(h) Which of the following is the correct protocol for phone calls over the Internet?</div>
+<div class="opt"><span>(A) PPP</span><span>(B) FTP</span><span>(C) HTTP</span><span>(D) VoIP</span></div></div>
+
+<div class="blk"><div class="sub">(i) Which of the following networking devices is used to regenerate and transmit the weakened signal ahead?</div>
+<div class="opt"><span>(A) Hub</span><span>(B) Ethernet Card</span><span>(C) Repeater</span><span>(D) Modem</span></div></div>
+
+<div class="blk"><div class="sub">(j) Which of the following statements is false?</div>
+<div class="sub2">(A) SMTP and POP protocols are used in email communication.<br>
+(B) URL of a page is not always the same as its domain name.<br>
+(C) HTTPS is safer than HTTP.<br>
+(D) Interlinking of collection of webpages is called Internet.</div></div>
+
+<div class="blk"><div class="sub">(k) In which network topology is every node connected directly to every other node of the network?</div>
+<div class="opt"><span>(A) Star</span><span>(B) Bus</span><span>(C) Tree</span><span>(D) Mesh</span></div></div>
+
+<div class="blk">
+<div class="sub"><i>Q1 (l) and (m) are Assertion (A) and Reason (R) based questions. Mark the correct choice as:</i><br>
+(A) Both A and R are True and R is the correct explanation for A.<br>
+(B) Both A and R are True and R is not the correct explanation for A.<br>
+(C) A is True but R is False.<br>
+(D) A is False but R is True.</div>
+<div class="sub">(l) <b>Assertion (A):</b> When two Series having different index labels are added, the result contains NaN for the labels that do not match.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Reason (R):</b> Arithmetic operations between two Series are performed on matching index labels.</div>
+<div class="sub">(m) <b>Assertion (A):</b> A website can remember the language and theme chosen by a user on the next visit.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Reason (R):</b> Cookies are small text files that a website stores on the user's computer through the web browser.</div>
+</div>
+
+<div class="sec">SECTION - B</div>
+<div class="blk">
+<div class="q"><span class="no">Q.2</span><span class="tx">Complete the given Python code to get the required output as: <b>Rajasthan</b></span><span class="mk">(2)</span></div>
+<pre>import _________ as pd
+di = {'Corbett': 'Uttarakhand', 'Sariska': 'Rajasthan',
+      'Kanha': 'Madhya Pradesh', 'Gir': 'Gujarat'}
+NP = _________.Series( _________ )
+print(NP[ _________ ])</pre>
+</div>
+
+<div class="q"><span class="no">Q.3</span><span class="tx">Differentiate between Web server and Web browser. Write any two popular web browsers.</span><span class="mk">(2)</span></div>
+
+<div class="blk">
+<div class="q"><span class="no">Q.4</span><span class="tx">Carefully observe the following code:</span><span class="mk">(2)</span></div>
+<pre>import pandas as pd
+Year1 = {'Q1': 5000, 'Q2': 8000, 'Q3': 12000, 'Q4': 18000}
+Year2 = {'A': 13000, 'B': 14000, 'C': 12000}
+totSales = {1: Year1, 2: Year2}
+df = pd.DataFrame(totSales)
+print(df)</pre>
+<div class="sub">Answer the following:<br>(i) List the index of the DataFrame df. &nbsp;&nbsp;&nbsp; (ii) List the column names of the DataFrame df.</div>
+</div>
+
+<div class="sec">SECTION - C</div>
+<div class="q"><span class="no">Q.5</span><span class="tx">The four houses of Class 12-D of a school are Beas, Chenab, Ravi and Satluj, having 18, 2, 20 and 18 students respectively. Write Python statements to:</span><span class="mk">(3)</span></div>
+<div class="sub">(a) Create a Series object <b>House</b> from a dictionary that stores the number of students in each house. &nbsp;(2)</div>
+<div class="sub">(b) Display the names and strength of only those houses that have more than 15 students. &nbsp;(1)</div>
+
+<div class="q"><span class="no">Q.6</span><span class="tx">Differentiate between the following (one point each):</span><span class="mk">(3)</span></div>
+<div class="sub">(a) Website and Web page</div>
+<div class="sub">(b) Static web page and Dynamic web page</div>
+<div class="sub">(c) Hub and Switch</div>
+
+<div class="blk">
+<div class="q"><span class="no">Q.7</span><span class="tx">Consider the following DataFrame <b>df</b>:</span><span class="mk">(3)</span></div>
+<table>
+  <tr><th></th><th>Name</th><th>Eng</th><th>Maths</th></tr>
+  <tr><td><b>S1</b></td><td>Asha</td><td>78</td><td>88</td></tr>
+  <tr><td><b>S2</b></td><td>Bimal</td><td>65</td><td>72</td></tr>
+  <tr><td><b>S3</b></td><td>Chitra</td><td>90</td><td>95</td></tr>
+  <tr><td><b>S4</b></td><td>Dev</td><td>55</td><td>40</td></tr>
+</table>
+<div class="sub">Write the output of the following:</div>
+<pre>(a) print(df['Eng'] + df['Maths'])
+
+(b) for i, row in df.iterrows():
+        if row['Eng'] > row['Maths']:
+            print(i, row['Name'])
+
+(c) print(df.Maths.max(), df.Eng.min())</pre>
+</div>
+
+<div class="sec">SECTION - D</div>
+<div class="q"><span class="no">Q.8</span><span class="tx">Consider the following list:<br>
+<code>[['Divya', 'HR', 95000], ['Mamta', 'Marketing', 97000], ['Payal', 'IT', 98000], ['Deepak', 'Sales', 79000]]</code><br>Write Python statements to:</span><span class="mk">(4)</span></div>
+<div class="sub">(a) Create a DataFrame <b>Emp</b> from the given list with the column headings Name, Department and Salary. &nbsp;(2)</div>
+<div class="sub">(b) Export the DataFrame <b>Emp</b> to a CSV file named "EMP.csv" without writing its row labels. &nbsp;(1)</div>
+<div class="sub">(c) Read the file "EMP.csv" back into a new DataFrame named <b>Emp2</b>. &nbsp;(1)</div>
+
+<div class="q"><span class="no">Q.9</span><span class="tx">Answer the following questions:</span><span class="mk">(4)</span></div>
+<div class="sub">(a) Expand the following: URL, WWW</div>
+<div class="sub">(b) What is web hosting?</div>
+<div class="sub">(c) What are add-ons (plug-ins) in a web browser? Give one example.</div>
+<div class="sub">(d) Name the device that converts digital signals into analog signals and vice versa. Why is it needed?</div>
+
+<div class="blk">
+<div class="q"><span class="no">Q.10</span><span class="tx">Consider the given DataFrame <b>Genre</b>:</span><span class="mk">(4)</span></div>
+<table>
+  <tr><th></th><th>Type</th><th>Code</th></tr>
+  <tr><td><b>0</b></td><td>Fiction</td><td>F</td></tr>
+  <tr><td><b>1</b></td><td>Non Fiction</td><td>NF</td></tr>
+  <tr><td><b>2</b></td><td>Drama</td><td>D</td></tr>
+  <tr><td><b>3</b></td><td>Poetry</td><td>P</td></tr>
+</table>
+<div class="sub">Write suitable Python statements for the following:</div>
+<div class="sub">(a) Add a column called <b>Num_Copies</b> with the values 300, 290, 450, 760.</div>
+<div class="sub">(b) Add a new genre of type 'Folk Tale' having code 'FT' and 600 number of copies, with row label 4.</div>
+<div class="sub">(c) Delete the row of the genre 'Drama' (row label 2).</div>
+<div class="sub">(d) Change the Num_Copies of 'Poetry' (row label 3) to 500.</div>
+</div>
+
+<div class="sec">SECTION - E</div>
+<div class="blk">
+<div class="q"><span class="no">Q.11</span><span class="tx">Ekam, a Data Analyst with a multinational brand, has designed the DataFrame <b>df</b> that contains the four quarters' sales data of different stores as shown below:</span><span class="mk">(5)</span></div>
+<table>
+  <tr><th></th><th>Store</th><th>Qtr1</th><th>Qtr2</th><th>Qtr3</th><th>Qtr4</th></tr>
+  <tr><td><b>0</b></td><td>Store1</td><td>300</td><td>240</td><td>450</td><td>230</td></tr>
+  <tr><td><b>1</b></td><td>Store2</td><td>350</td><td>340</td><td>403</td><td>210</td></tr>
+  <tr><td><b>2</b></td><td>Store3</td><td>250</td><td>180</td><td>145</td><td>160</td></tr>
+</table>
+<div class="sub">Answer the following:</div>
+<div class="sub">(a) Predict the output of: <code>print(df.size)</code></div>
+<div class="sub">(b) Write a Python statement to add a new column <b>Total Sales</b>, which is the sum of all four quarters' sales.</div>
+<div class="sub">(c) Write a Python statement to display the store-wise highest quarterly sale (row-wise maximum of Qtr1 to Qtr4).</div>
+<div class="sub">(d) Write a Python statement to delete the last row from the DataFrame.</div>
+<div class="sub">(e) Write a Python statement to export the DataFrame to a CSV file named "data.csv" stored in the D: drive.</div>
+</div>
+
+<div class="blk">
+<div class="q"><span class="no">Q.12</span><span class="tx">'Swabhaav' is a big NGO working in the field of Psychological Treatment and Counselling, having its Head Office in Nagpur. It is planning to set up a center in Vijayawada. The Vijayawada Center will have four blocks – ADMIN, PSYCHIATRY, PSYCHOLOGY and ICU. You, as a Network Expert, need to suggest the best network-related solutions for them to resolve the issues/problems mentioned in questions (a) to (e), keeping the following parameters in mind:</span><span class="mk">(5)</span></div>
+<div style="display:flex; gap:10px;">
+<table>
+  <tr><th>From</th><th>To</th><th>Distance</th></tr>
+  <tr><td>ADMIN</td><td>PSYCHIATRY</td><td>65 m</td></tr>
+  <tr><td>ADMIN</td><td>PSYCHOLOGY</td><td>65 m</td></tr>
+  <tr><td>ADMIN</td><td>ICU</td><td>65 m</td></tr>
+  <tr><td>PSYCHIATRY</td><td>PSYCHOLOGY</td><td>100 m</td></tr>
+  <tr><td>PSYCHIATRY</td><td>ICU</td><td>50 m</td></tr>
+  <tr><td>PSYCHOLOGY</td><td>ICU</td><td>50 m</td></tr>
+</table>
+<table style="align-self:flex-start">
+  <tr><th>Block</th><th>No. of Computers</th></tr>
+  <tr><td>ADMIN</td><td>16</td></tr>
+  <tr><td>PSYCHIATRY</td><td>40</td></tr>
+  <tr><td>PSYCHOLOGY</td><td>19</td></tr>
+  <tr><td>ICU</td><td>20</td></tr>
+</table>
+</div>
+<div class="sub">Distance of Nagpur Head Office from Vijayawada Center = 700 km</div>
+<div class="sub">(a) Suggest the most appropriate location of the server inside the Vijayawada Center. Justify your choice.</div>
+<div class="sub">(b) Which hardware device will you suggest to connect all the computers within each block of the Vijayawada Center?</div>
+<div class="sub">(c) Draw a cable layout to efficiently connect various blocks within the Vijayawada Center.</div>
+<div class="sub">(d) Where should the router be placed to provide internet to all the computers in the Vijayawada Center?</div>
+<div class="sub">(e) Which type of network (PAN, LAN, MAN or WAN) will be set up among the computers connected with the Vijayawada Center?</div>
+</div>
+
+<div class="end">************************* End of Question Paper *************************</div>
+</body></html>

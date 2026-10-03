@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Class XII IP Pre-Board 1 Marking Scheme</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="hdr">
+  <h1>GURU TEGH BAHADUR PUBLIC SCHOOL, DURGAPUR</h1>
+  <h2>SESSION : 2026-27</h2>
+  <h3>PRE-BOARD EXAMINATION – I &nbsp;|&nbsp; MARKING SCHEME</h3>
+</div>
+<div class="meta"><span>CLASS : XII</span><span>MAXIMUM MARKS : 50</span></div>
+<div class="meta"><span>SUBJECT : INFORMATICS PRACTICES (065)</span><span>TIME ALLOWED : 1 Hr. 45 Min.</span></div>
+<hr>
+<div class="ans"><b>Chapters covered:</b> Ch 1 Python Pandas – I, Ch 2 Python Pandas – II, Ch 9 Introduction to Computer Networks, Ch 10 Introduction to Internet and Web.<br>
+<b>Marks by chapter:</b> Pandas (Ch 1 &amp; 2) – 30; Networks, Internet &amp; Web (Ch 9 &amp; 10) – 20.</div>
+
+<div class="sec">SECTION - A (1 × 13 = 13)</div>
+<div class="ans">
+(a) False &nbsp;&nbsp; (b) (B) 90 &nbsp;&nbsp; (c) (C) <code>size</code> &nbsp;&nbsp; (d) (A) <code>pd.read_csv()</code> &nbsp;&nbsp; (e) (B) <code>index=False</code><br>
+(f) columns &nbsp;&nbsp; (g) (A) PAN &nbsp;&nbsp; (h) (D) VoIP &nbsp;&nbsp; (i) (C) Repeater<br>
+(j) (D) Interlinking of collection of webpages is called Internet. &nbsp;&nbsp; (k) (D) Mesh<br>
+(l) (A) Both A and R are True and R is the correct explanation for A.<br>
+(m) (A) Both A and R are True and R is the correct explanation for A.</div>
+
+<div class="sec">SECTION - B</div>
+<div class="q"><span class="no">Q.2</span><span class="tx">The four blanks are <code>pandas</code>, <code>pd</code>, <code>di</code> and <code>'Sariska'</code>. (½ mark each)</span><span class="mk">(2)</span></div>
+<div class="q"><span class="no">Q.3</span><span class="tx">A web server is a computer or program that stores websites and sends web pages to clients when they request them. A web browser is client software used to request, retrieve and display web pages. (1)<br>
+Popular browsers: Google Chrome, Mozilla Firefox, Microsoft Edge, Safari. Any two, ½ mark each.</span><span class="mk">(2)</span></div>
+<div class="q"><span class="no">Q.4</span><span class="tx">(i) Index: <code>Q1, Q2, Q3, Q4, A, B, C</code> (1)<br>(ii) Columns: <code>1, 2</code> (1)</span><span class="mk">(2)</span></div>
+
+<div class="sec">SECTION - C</div>
+<div class="q"><span class="no">Q.5</span><span class="tx"><pre>(a) House = pd.Series({'Beas': 18, 'Chenab': 2, 'Ravi': 20, 'Satluj': 18})
+(b) print(House[House > 15])</pre>
+Output of (b), for reference:
+<pre>Beas      18
+Ravi      20
+Satluj    18
+dtype: int64</pre></span><span class="mk">(3)</span></div>
+<div class="q"><span class="no">Q.6</span><span class="tx">(a) A web page is a single document on the WWW. A website is a collection of related web pages under one domain name.<br>
+(b) A static web page shows the same, fixed content to every user, and its content changes only when the page is edited. A dynamic web page's content is generated when it is requested, for example by server-side scripts or a database, so it can change for each user or visit.<br>
+(c) A hub sends incoming data to all connected devices. A switch sends data only to the intended device.<br>(1 mark each)</span><span class="mk">(3)</span></div>
+<div class="q"><span class="no">Q.7</span><span class="tx">(a)<pre>S1    166
+S2    137
+S3    185
+S4     95
+dtype: int64</pre>
+(b) <code>S4 Dev</code><br>
+(c) <code>95 55</code><br>(1 mark each)</span><span class="mk">(3)</span></div>
+
+<div class="sec">SECTION - D</div>
+<div class="q"><span class="no">Q.8</span><span class="tx"><pre>(a) L = [['Divya', 'HR', 95000], ['Mamta', 'Marketing', 97000],
+         ['Payal', 'IT', 98000], ['Deepak', 'Sales', 79000]]
+    Emp = pd.DataFrame(L, columns=['Name', 'Department', 'Salary'])
+(b) Emp.to_csv("EMP.csv", index=False)
+(c) Emp2 = pd.read_csv("EMP.csv")</pre></span><span class="mk">(4)</span></div>
+<div class="q"><span class="no">Q.9</span><span class="tx">(a) URL – Uniform Resource Locator; WWW – World Wide Web. (½ + ½)<br>
+(b) Web hosting is a service that stores a website's files on a web server connected to the Internet, so that the website can be accessed by users all over the world. (1)<br>
+(c) Add-ons or plug-ins are small software components added to a web browser to give it extra features. Examples: an ad-blocker, a PDF viewer, or a video player plug-in. (½ + ½)<br>
+(d) Modem (Modulator–Demodulator). It is needed because computers work with digital signals, while telephone and cable lines carry analog signals. (½ + ½)</span><span class="mk">(4)</span></div>
+<div class="q"><span class="no">Q.10</span><span class="tx"><pre>(a) Genre['Num_Copies'] = [300, 290, 450, 760]
+(b) Genre.loc[4] = ['Folk Tale', 'FT', 600]
+(c) Genre = Genre.drop(2)        # or Genre.drop(2, inplace=True)
+(d) Genre.loc[3, 'Num_Copies'] = 500     # or Genre.at[3, 'Num_Copies'] = 500</pre>(1 mark each)</span><span class="mk">(4)</span></div>
+
+<div class="sec">SECTION - E</div>
+<div class="q"><span class="no">Q.11</span><span class="tx"><pre>(a) 15
+(b) df['Total Sales'] = df['Qtr1'] + df['Qtr2'] + df['Qtr3'] + df['Qtr4']
+(c) print(df[['Qtr1', 'Qtr2', 'Qtr3', 'Qtr4']].max(axis=1))
+(d) df = df.drop(2)              # or df.drop(2, inplace=True)
+(e) df.to_csv("D:\\data.csv")    # or df.to_csv("D:/data.csv")</pre>(1 mark each)</span><span class="mk">(5)</span></div>
+<div class="q"><span class="no">Q.12</span><span class="tx">(a) PSYCHIATRY block. It has the most computers (40), so placing the server there keeps most traffic local. (1)<br>
+(b) Switch (or hub). (1)<br>
+(c) Star layout centred on PSYCHIATRY: PSYCHIATRY–ADMIN (65 m), PSYCHIATRY–ICU (50 m), PSYCHIATRY–PSYCHOLOGY (100 m).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Also accept the minimum-cable layout PSYCHIATRY–ICU (50 m), ICU–PSYCHOLOGY (50 m), ADMIN–ICU (65 m). (1)<br>
+(d) In the PSYCHIATRY block, the server block. (1)<br>
+(e) LAN. (1)</span><span class="mk">(5)</span></div>
+
+<div class="sec">SOURCES OF QUESTIONS TAKEN FROM PREVIOUS PAPERS</div>
+<table style="margin-left:0">
+  <tr><th>Question</th><th>Source</th></tr>
+  <tr><td>Q1 (g)</td><td>CBSE CS Sample Paper 2023-24, Q6 (verbatim)</td></tr>
+  <tr><td>Q1 (h)</td><td>CBSE Board Exam 2025 (CS, Q.P. Code 91), Q18</td></tr>
+  <tr><td>Q1 (i)</td><td>CBSE Board Exam 2025 (CS, Q.P. Code 91), Q17 (verbatim)</td></tr>
+  <tr><td>Q1 (j)</td><td>CBSE CS Additional Practice Paper 2023-24, Q15 (verbatim)</td></tr>
+  <tr><td>Q3</td><td>CBSE CS Sample Paper 2020-21, Q25 (OR part); also CS Practice Paper 2023-24, Q19</td></tr>
+  <tr><td>Q12</td><td>CBSE Board Exam 2025 (CS, Q.P. Code 91), Q37. Part (e) is the OR option of (v).</td></tr>
+  <tr><td>Q2, Q4, Q5, Q8, Q10, Q11</td><td>Adapted from CBSE IP Sample Papers (2022-23 / 2023-24). These are from memory, because no IP papers are in the repository, so check them against the original papers.</td></tr>
+</table>
+
+<div class="end">************************* End of Marking Scheme *************************</div>
+</body></html>
